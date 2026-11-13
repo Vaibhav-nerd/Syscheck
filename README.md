@@ -1,6 +1,6 @@
 # syscheck (Rust) — v2.0
 
-Terminal system performance checker for Linux — native Rust rewrite of the
+Terminal system performance checker for **Linux** — native Rust rewrite of the
 Python version, with a full ratatui TUI dashboard and a fully portable build.
 
 ## What it shows
