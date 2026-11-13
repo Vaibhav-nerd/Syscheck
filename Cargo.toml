@@ -1,0 +1,29 @@
+[package]
+name = "syscheck"
+version = "2.0.0"
+edition = "2021"
+description = "Terminal system performance checker for Linux (CPU, RAM, storage, network, processes, temperatures)"
+license = "MIT"
+
+[[bin]]
+name = "syscheck"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", default-features = false, features = [
+    "std",
+    "help",
+    "usage",
+    "error-context",
+    "suggestions",
+] }
+ratatui = "0.29"
+ureq = { version = "2", default-features = false, features = ["tls"] }
+serde_json = "1"
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
+codegen-units = 1

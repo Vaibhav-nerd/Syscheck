@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=syscheck
+GenericName=System Performance Checker
+Comment=Monitor CPU, RAM, storage, network, processes and temperatures
+Exec=syscheck --watch
+Icon=syscheck
+Terminal=true
+Categories=System;Monitor;Utility;
+Keywords=cpu;memory;disk;network;monitor;performance;
